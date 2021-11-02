@@ -452,9 +452,9 @@ def create_loggroup_and_set_retention(cwl_client, log_group, retention):
         logger.debug(response)
     logger.info(
         f'put retention policy as {retention} days for {log_group}')
-    response = cwl_client.put_retention_policy(
-        logGroupName=log_group, retentionInDays=retention)
-    logger.debug(response)
+   # response = cwl_client.put_retention_policy(
+    #    logGroupName=log_group, retentionInDays=retention)
+   # logger.debug(response)
 
 
 def setup_aes_system_log():
